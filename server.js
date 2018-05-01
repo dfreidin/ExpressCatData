@@ -26,6 +26,16 @@ app.get("/cats/2", function(request, response){
     };
     response.render("show_cat", cat_info);
 });
+app.get("/cats/3", function(request, response){
+    var cat_info = {
+        image_file: "/images/animal-animal-photography-cat-57416.jpg",
+        name: "Miss Kitty Fantastico",
+        age: 2,
+        food: "shrimp",
+        sleeping_spots: ["sunbeam", "cat bed"]
+    };
+    response.render("show_cat", cat_info);
+});
 app.get("/cats/4", function(request, response){
     var cat_info = {
         image_file: "/images/animal-cat-face-close-up-416160.jpg",
